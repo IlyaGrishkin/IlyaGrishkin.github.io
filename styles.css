@@ -1,0 +1,712 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: century gothic, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    margin-top: 9em;
+    background-color: black;
+    margin-bottom: 9em;
+}
+
+h1, h3{
+color: white;
+margin-top: 0;
+margin-bottom: 12px;
+}
+
+
+p {
+color: white;
+margin-top: 0;
+}
+
+h1 {
+font-size: 4em;
+}
+h3 {
+font-size: 2em;
+}
+
+/* Classes */
+
+.form-check-label {
+    color: white;
+}
+
+
+
+.top {
+display: grid;
+grid-template-columns: repeat(14, 1fr);
+}
+.top>img {
+   grid-column: 3/6;
+   width: 100px;
+   border-radius: 10px;
+}
+.name {
+grid-column: 8/15;
+}
+.name img{
+width: 40px;
+}
+#switcher {
+    grid-column: 13/15;
+    font-size: 20px;
+
+}
+
+.location {
+display: flex;
+column-gap: 24px;
+margin-top: 35px;
+}
+.pos {
+}
+
+.location p{
+font-size: 28px;
+padding-top: 6px;
+}
+
+.bottom {
+   display: grid;
+   grid-template-columns: repeat(14, 1fr);
+   margin-top: 35px;
+}
+.contact {
+grid-column: 3/7;
+}
+
+.email p{
+color: white;
+font-size: 25px;
+margin-bottom: 0;
+}
+
+.bottom h4{
+color: white;
+font-size: 33px;
+margin-bottom: 28px;
+}
+.email img {
+width: 35px;
+height: 28px;
+}
+.email {
+display: flex;
+column-gap: 24px;
+margin-bottom: 20px;
+}
+.telegram {
+display: flex;
+column-gap: 24px;
+}
+.telegram img {
+width: 33px;
+height: 33px;
+}
+.telegram a{
+color: white;
+font-size: 25px;
+margin-bottom: 0;
+text-decoration: none;
+}
+.about-container{
+grid-column: 8/13;
+}
+.about-container p{
+font-size: 22px;
+}
+.about-container h4{
+margin-bottom: 20px;
+}
+.inspired{
+display: grid;
+grid-template-columns: repeat(14, 1fr);
+margin-top: 25px;
+}
+.miha{
+grid-column: 3/6;
+}
+.miha h4{
+color: white;
+font-size: 30px;
+margin-bottom: 15px;
+margin-top:0;
+}
+.miha a{
+color: white;
+font-size: 25px;
+text-decoration: none;
+}
+.line {
+border-top: 2px solid;
+color: white;
+width: 75%;
+margin-bottom: 30px;
+}
+
+.line-2 {
+border-top: 2px solid;
+color: white;
+margin-bottom: 30px;
+}
+
+.name-and-switcher {
+    display: flex;
+}
+
+.name-and-switcher>#switcher{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+
+@media (min-width: 10px) and (max-width: 345px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    body { 
+        min-height: 100%; 
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        }
+    h3 {
+        font-size: 15px;
+        }
+    .contact {
+        grid-column: 2/7;
+    }
+    .about-container{
+        grid-column: 10/14;
+        }
+    
+    .miha {
+        grid-column: 2/6;
+        }
+    
+    .miha h4{
+        color: white;
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top:0;
+        }
+    
+    .miha a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        }
+    .telegram {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .telegram a{
+        color: white;
+        font-size: 12px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .telegram img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .email {
+        column-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .email>img{
+        width: 18px;
+        height: 15px;
+        margin-top: 3px;
+    }
+    .bottom h4{
+        font-size: 22px;
+    }
+
+    .bottom p{
+        font-size: 12px;
+    }
+    .location {
+        margin-top: 15px;
+        margin-right: 25px;
+        column-gap: 10px;
+
+    }
+    .location>p {
+        font-size: 12px;
+    }
+
+    .pos>img {
+        width:30px;
+        margin-top: 7px;
+    }
+    #switcher2 {
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .name {
+        grid-column: 4/15;
+        }
+    .name-and-switcher>#switcher{
+        display: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .top>img {
+        grid-column: 2/3;
+        width: 100px;
+        border-radius: 10px;
+     }
+
+    .about-container>p{
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 345px) and (max-width: 400px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    body { 
+        min-height: 100%; 
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        }
+    h3 {
+        font-size: 15px;
+        }
+    .contact {
+        grid-column: 2/7;
+    }
+    .about-container{
+        grid-column: 10/14;
+        }
+    
+    .miha {
+        grid-column: 2/6;
+        }
+    
+    .miha h4{
+        color: white;
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top:0;
+        }
+    
+    .miha a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        }
+    .telegram {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .telegram a{
+        color: white;
+        font-size: 12px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .telegram img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .email {
+        column-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .email>img{
+        width: 18px;
+        height: 15px;
+        margin-top: 3px;
+    }
+    .bottom h4{
+        font-size: 22px;
+    }
+
+    .bottom p{
+        font-size: 12px;
+    }
+    .location {
+        margin-top: 15px;
+        margin-right: 25px;
+        column-gap: 10px;
+
+    }
+    .location>p {
+        margin-top: 7px;
+        font-size: 12px;
+    }
+
+    .pos>img {
+        width:25px;
+        margin-top: 7px;
+    }
+    #switcher2 {
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    .name {
+        grid-column: 6/14;
+        }
+    .name-and-switcher>#switcher{
+        display: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .top>img {
+        grid-column: 2/3;
+        width: 100px;
+        border-radius: 10px;
+     }
+
+    .about-container>p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    body { 
+        min-height: 100%; 
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        }
+    h3 {
+        font-size: 15px;
+        }
+    .contact {
+        grid-column: 2/7;
+    }
+    .about-container{
+        grid-column: 10/14;
+        }
+    
+    .miha {
+        grid-column: 2/6;
+        }
+    
+    .miha h4{
+        color: white;
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top:0;
+        }
+    
+    .miha a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        }
+    .telegram {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .telegram a{
+        color: white;
+        font-size: 12px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .telegram img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .email {
+        column-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .email>img{
+        width: 18px;
+        height: 15px;
+        margin-top: 3px;
+    }
+    .bottom h4{
+        font-size: 22px;
+    }
+
+    .bottom p{
+        font-size: 12px;
+    }
+    .location {
+        margin-top: 15px;
+        margin-right: 25px;
+        column-gap: 10px;
+
+    }
+    .location>p {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .pos>img {
+        width:25px;
+        margin-top: 7px;
+    }
+    #switcher2 {
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    .name {
+        grid-column: 7/15;
+        }
+    .name-and-switcher>#switcher{
+        display: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .top>img {
+        grid-column: 2/3;
+        width: 120px;
+        border-radius: 10px;
+     }
+
+    .about-container>p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 950px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+    body { 
+        min-height: 100%; 
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        }
+    h3 {
+        font-size: 20px;
+        }
+    .contact {
+        grid-column: 2/7;
+    }
+    .about-container{
+        grid-column: 10/14;
+        }
+    
+    .miha {
+        grid-column: 2/6;
+        }
+    
+    .miha h4{
+        color: white;
+        font-size: 27px;
+        margin-bottom: 15px;
+        margin-top:0;
+        }
+    
+    .miha a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        }
+    .telegram {
+        display: flex;
+        column-gap: 10px;
+    }
+    .telegram p{
+        padding-bottom: 7px;
+    }
+    .telegram a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    .telegram img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .email {
+        column-gap: 10px;
+        margin-bottom: 20px;
+    }
+    .email p{
+        font-size: 15px;
+    }
+    .email>img{
+        width: 18px;
+        height: 15px;
+        margin-top: 3px;
+    }
+    .bottom h4{
+        font-size: 27px;
+    }
+
+    .location {
+        margin-top: 15px;
+        margin-right: 25px;
+        column-gap: 10px;
+
+    }
+    .location>p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .pos>img {
+        width:25px;
+        margin-top: 7px;
+    }
+    #switcher2 {
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    .name {
+        grid-column: 9/14;
+        }
+    .name-and-switcher>#switcher{
+        display: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .top>img {
+        grid-column: 2/3;
+        width: 150px;
+        border-radius: 10px;
+     }
+
+    .about-container>p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1200px) {
+    #switcher {
+        display: none;
+    }
+    #switcher2 {
+        margin-bottom: 10px;
+        margin-left: 150px;
+    }
+    #switcher2>label{
+        font-size: 20px;
+    }
+    body {
+        margin-top: 70px;
+    }
+    .top>img {
+        grid-column: 3/5;
+        width: 230px;
+        border-radius: 10px;
+     }
+     .about-container{
+        grid-column: 9/14;
+        }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    #switcher2 {
+        display: none;
+    }
+     
+    body {
+        margin-top: 70px;
+    }
+    .top>img {
+        grid-column: 3/5;
+        width: 230px;
+        border-radius: 10px;
+     }
+     .about-container{
+        grid-column: 8/14;
+        }
+}
+ 
+@media (min-width: 1800px) and (max-width: 5000px) {
+    #switcher2 {
+        display: none;
+    }
+    #switcher>label{
+        font-size: 42px;
+        margin-left: 20px;
+    }
+    #flexSwitchCheckDefault{
+        width: 90px;
+        height: 50px;
+    }
+    .top>img {
+    width: 400px;
+    border-radius: 40px;
+    }
+    h1 {
+    font-size: 8em;
+    }
+    h3 {
+    font-size: 4em;
+}
+.about-container>p{
+    font-size: 45px;
+}
+
+.bottom h4{
+    font-size: 70px;
+}
+
+.miha h4{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 15px;
+    margin-top:0;
+    }
+
+}

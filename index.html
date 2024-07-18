@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<script>
+   localStorage.setItem("color", 'black');
+   function switchTheme() {
+     if (localStorage.getItem("color") == 'black'){
+        document.body.style.background = 'white';
+        localStorage.setItem("color", 'white');
+        let to_color = document.querySelectorAll('.colorful');
+        
+
+        
+        //https://img.icons8.com/?size=100&id=LWAxBTdk4GxH&format=png&color=000000
+        for (let obj of to_color) {
+             obj.style.color = 'black';
+        }
+        document.getElementById('iconpos').src = "https://img.icons8.com/ios/50/where.png";
+        document.getElementById('iconemail').src = "https://img.icons8.com/ios/50/mail.png";
+        document.getElementById('icontg').src = "https://img.icons8.com/ios/50/telegram.png";
+     }
+     else {
+        document.body.style.background = 'black';
+        localStorage.setItem("color", 'black');
+        let to_color = document.querySelectorAll('.colorful');
+        for (let obj of to_color) {
+             obj.style.color = 'white';
+        }
+        document.getElementById('iconpos').src = "https://img.icons8.com/ios/50/FFFFFF/where.png";
+        document.getElementById('iconemail').src = "https://img.icons8.com/?size=100&id=12580&format=png&color=FFFFFF";
+        document.getElementById('icontg').src = "https://img.icons8.com/?size=100&id=9R1sV3QvY18K&format=png&color=FFFFFF";
+     }
+   }
+
+</script>
+
+<div class="name-and-switcher">
+    <div class="form-check form-switch" id="switcher2">
+        <input class="form-check-input" type="checkbox" onclick="switchTheme()" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label colorful" for="flexSwitchCheckDefault">Light theme</label>
+    </div>
+</div>
+<div class="top">
+
+    <img src="https://sun9-58.userapi.com/impg/DhTUoDkgFDNRDbnKLjuG0FDQULvCiRpxo3aFPw/uHi_ypGEYO4.jpg?size=992x992&quality=96&sign=62cba1266d953a6e8498dd683674f260&type=album" alt="">
+
+    <div class="name">
+        <div class="name-and-switcher">
+            <h1 class="colorful" id="name">Ilya Grishkin</h1>
+            <div class="form-check form-switch" id="switcher">
+                <input class="form-check-input" type="checkbox" onclick="switchTheme()" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label colorful" for="flexSwitchCheckDefault">Light theme</label>
+            </div>
+        </div>
+        
+        <h3 class="colorful">Python Developer</h3>
+        <div class="location">
+            <div class="pos">
+               <img id="iconpos" src="https://img.icons8.com/ios/50/FFFFFF/where.png" alt="">
+            </div>
+
+            <p class="colorful">Izhevsk, Udmurt Republic</p>
+        </div>
+
+    </div>
+
+    
+</div>
+
+<div class="bottom">
+    <div class="contact">
+        <div class="line colorful">
+    </div>
+         <h4 class="colorful">Contact</h4>
+         <div class="email">
+             <img id="iconemail" src="https://img.icons8.com/?size=100&id=12580&format=png&color=FFFFFF" alt="">
+             <p class="colorful">Ilagriskin5@gmail.com</p>
+         </div>
+         <div class="telegram">
+             <img id="icontg" src="https://img.icons8.com/?size=100&id=9R1sV3QvY18K&format=png&color=FFFFFF" alt="">
+             <p class="colorful"><a class="colorful" href="https://t.me/IlyaGrishkin">@IlyaGrishkin</a></p>
+         </div>
+    </div>
+
+    <div class="about-container">
+         <div class="line colorful"></div>
+         <h4 class="colorful">About</h4>
+         <p class="colorful">Hello! My name is Ilya and I'm novice Python developer, working with web frameworks like Django. For me this site is a great opportunity to improve my frontend skills</p>
+    </div>
+</div>
+
+<div class="inspired">
+    <div class="miha">
+        <div class="line-2 colorful"></div>
+        <h4 class="colorful">Inspired by:</h4>
+        <p><a class="colorful" href="http://michaelovechkin.ru/">michaelovechkin.ru</a></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    function make_color() {
+        let name = document.querySelector('#name');
+        let computedStyle = getComputedStyle(name);
+
+        //alert(computedStyle.color === 'rgb(255, 255, 255)');
+        if (computedStyle.color === 'rgb(255, 255, 255)' || computedStyle.color === 'rgb(0, 0, 0)'){
+            name.style.color = 'rgb(250, 213, 175)';
+        }
+        else if (computedStyle.color === 'rgb(250, 213, 175)'){
+            name.style.color = 'rgb(163, 230, 116)';
+        }
+        else if (computedStyle.color === 'rgb(163, 230, 116)'){
+            name.style.color = 'rgb(177, 237, 245)';
+        }
+        else if (computedStyle.color === 'rgb(177, 237, 245)'){;
+            //alert(window.getComputedStyle( document.body ,null).getPropertyValue('background-color'));
+            if (window.getComputedStyle( document.body ,null).getPropertyValue('background-color') === 'rgb(255, 255, 255)') name.style.color = 'rgb(0, 0, 0)';
+            else name.style.color = 'rgb(255, 255, 255)';
+        }
+        
+
+        
+        
+    }
+    setInterval(make_color, 4000);
+     
+    
+     
+   
+</script>
+</body>
+</html>
