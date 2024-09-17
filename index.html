@@ -41,6 +41,18 @@
    }
 
 </script>
+<script>
+        const xhr = new XMLHttpRequest()
+        const method = 'GET'
+        const url = 'http://127.0.0.1:8000/api/painting/'
+        const responseType = 'json'
+        xhr.responseType = responseType
+        xhr.open(method, url)
+        xhr.onload = function(){
+            console.log(xhr.response)
+        }
+        xhr.send()
+</script>
 
 <div class="name-and-switcher">
     <div class="form-check form-switch" id="switcher2">
